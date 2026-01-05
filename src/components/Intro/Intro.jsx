@@ -59,18 +59,17 @@ const Intro = () => {
 
           </span>
         </motion.div>
-        <motion.a 
-          href="https://wa.me/+1 (929) 496-4971" 
-          smooth={true} 
-          spy={true}
+        <motion.button 
+          className="button i-button"
+          onClick={() => window.open('https://wa.me/19294964971', '_blank', 'noopener,noreferrer')}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <button className="button i-button">Hire me</button>
-        </motion.a>
+          Hire me
+        </motion.button>
         {/* social icons */}
         <motion.div 
           className="i-icons"
@@ -122,7 +121,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div crwn"
         >
-          <FloatinDiv  img={crown} text1="Python" text2="LLM/AI" />
+          <FloatinDiv  img={crown} text1="Python LLM/AI" text2="ASP.NET" />
         </motion.div>
 
         {/* animation */}

@@ -82,6 +82,11 @@
   padding: 0;
 }
 
+/* Make crwn floating div same size as other floating div */
+.floating-div.crwn {
+  transform: scale(1) !important;
+}
+
 /* blur */
 .blur {
   position: absolute;
